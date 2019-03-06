@@ -110,13 +110,18 @@ endif()
 set(capnp-json_sources
   compat/json.c++
   compat/json.capnp.c++
+  compat/json-rpc.c++
+  compat/json-rpc.capnp.c++
 )
 set(capnp-json_headers
   compat/json.h
   compat/json.capnp.h
+  compat/json-rpc.h
+  compat/json-rpc.capnp.h
 )
 set(capnp-json_schemas
   compat/json.capnp
+  compat/json-rpc.capnp
 )
 if(NOT CAPNP_LITE)
   add_library(capnp-json ${capnp-json_sources})
